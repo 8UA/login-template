@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+html {
+    cursor: none;
+    font-family: 'Nanum Gothic', sans-serif;
+    background: url(bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+hr {
+    border-color: #ffffff50;
+}
+
+.container {
+    animation: fadeIn 1.5s ease-out;
+    backdrop-filter: blur(10px);
+    box-shadow: 12px 14px 5px -8px rgba(0,0,0,0.30);
+    background-color: #0000009c;
+    border: 1px solid #ffffff50;
+    border-radius: 8px;
+    width: 45%;
+    height: 55%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-content * {
+    color: #ffffff;
+    margin: 18px;
+}
+.container-content input {
+    cursor: none;
+    width: 90%;
+    font-size: 16px;
+    background-color: #000000d2;
+    border: 1px solid #ffffff50;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 3%;
+    transition: 0.5s;
+}
+    .container-content input:hover {
+        border: 1px solid #ffffff;
+    }
+    .container-content input:focus {
+        font-size: 18px;
+    }
+
+.button-login {
+    cursor: none;
+    float: right;
+    width: 20%;
+    padding: 2%;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #131313;
+    border-radius: 4px;
+    border-style: none;
+    transition: 1s;
+}
+    .button-login:hover {
+        background-color: #745A7F;
+        transition: 1s;
+    }
+
+#cursor {
+    z-index: 1;
+    position: fixed;
+    pointer-events: none;
+    transform: none;
+    transform-origin: center center;
+    padding: 2px;
+    transition: 300ms ease-out;
+}
